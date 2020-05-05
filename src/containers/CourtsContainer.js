@@ -9,7 +9,7 @@ class CourtsContainer extends React.Component {
         return (
         <div>
             <Switch>
-                <Route exact path="/courts" component={Courts}/>
+                <Route exact path="/courts" render={(props) => <Courts {...props} courts={this.props.courts} /> } />
             </Switch>
         </div>
         )
