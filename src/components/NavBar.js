@@ -11,7 +11,9 @@ const NavBar = () => {
     <nav>
         <NavLink exact to="/" activeStyle={activeStyle}>Home</NavLink>
         {"    |    "}
-        <NavLink to="/About" activeStyle={activeStyle}>About</NavLink>
+        <NavLink to="/courts" activeStyle={activeStyle}>Courts</NavLink>
+        {"    |    "}
+        <NavLink to="/about" activeStyle={activeStyle}>About</NavLink>
     </nav>
     </div>
     )
