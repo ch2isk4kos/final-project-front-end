@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Courts extends React.Component {
+class CourtsContainer extends React.Component {
 
     render () {
         return (
@@ -11,4 +11,4 @@ class Courts extends React.Component {
     }
 }
 
-export default Courts;
+export default CourtsContainer;
