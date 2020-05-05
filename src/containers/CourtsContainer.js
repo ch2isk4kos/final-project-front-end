@@ -2,6 +2,7 @@ import React from 'react'
 import Courts from '../components/Courts'
 import { Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux'
+import { fetchCourts } from '../redux/actions/fetchCourts'
 
 class CourtsContainer extends React.Component {
 
@@ -22,4 +23,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps)(CourtsContainer);
+export default connect(mapStateToProps, { fetchCourts })(CourtsContainer);
