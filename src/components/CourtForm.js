@@ -23,7 +23,7 @@ class CourtForm extends React.Component {
         return(
         <div>
         <form>
-            <label>Court Name</label><br></br>
+
             <input
                 type="input"
                 name="name"
@@ -31,7 +31,7 @@ class CourtForm extends React.Component {
                 value={this.state.name}
                 onChange={this.handleOnChange}
             /><br></br>
-            <label>Address</label><br></br>
+
             <input
                 type="input"
                 name="address"
@@ -40,7 +40,6 @@ class CourtForm extends React.Component {
                 onChange={this.handleOnChange}
             /><br></br>
 
-            <label>Image URL</label><br></br>
             <input
                 type="input"
                 name="img_url"
@@ -49,7 +48,6 @@ class CourtForm extends React.Component {
                 onChange={this.handleOnChange}
             /><br></br>
 
-            <label>Floor Type</label><br></br>
             <input
                 type="input"
                 name="floor_type"
