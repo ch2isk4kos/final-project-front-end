@@ -11,38 +11,50 @@ class CourtForm extends React.Component {
         floor_type: '',
     }
 
+    handleOnChange = event => {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+
+        console.log(event.target.value)
+    }
+
     render () {
         return(
         <div>
         <form>
+            <label>Court Name</label><br></br>
             <input
                 type="input"
                 name="name"
                 placeholder="Court Name"
-                value={this.state.court.name}
+                value={this.state.name}
                 onChange={this.handleOnChange}
             /><br></br>
+            <label>Address</label><br></br>
             <input
                 type="input"
                 name="address"
                 placeholder="Address"
-                value={this.state.court.address}
+                value={this.state.address}
                 onChange={this.handleOnChange}
             /><br></br>
 
+            <label>Image URL</label><br></br>
             <input
                 type="input"
                 name="img_url"
                 placeholder="Image URL"
-                value={this.state.court.imgURL}
+                value={this.state.imgURL}
                 onChange={this.handleOnChange}
             /><br></br>
 
+            <label>Floor Type</label><br></br>
             <input
                 type="input"
                 name="floor_type"
                 placeholder="Floor Type"
-                value={this.state.court.floor_type}
+                value={this.state.floor_type}
                 onChange={this.handleOnChange}
             /><br></br>
 
