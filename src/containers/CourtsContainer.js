@@ -1,5 +1,6 @@
 import React from 'react'
 import Courts from '../components/Courts'
+import Court from '../components/Court'
 import { Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux'
 import { fetchCourts } from '../redux/actions/fetchCourts'
