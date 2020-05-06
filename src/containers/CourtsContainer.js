@@ -1,6 +1,7 @@
 import React from 'react'
 import Courts from '../components/Courts'
 import Court from '../components/Court'
+import CourtForm from '../components/CourtForm'
 import { Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux'
 import { fetchCourts } from '../redux/actions/fetchCourts'
@@ -16,6 +17,7 @@ class CourtsContainer extends React.Component {
         <div>
             <Switch>
                 <Route exact path="/courts" render={(props) => <Courts {...props} courts={this.props.courts} /> } />
+                <Route path="/courts/new" render={() => <CourtForm />} />
                 <Route path="/courts/:id" render={(props) => <Court {...props} courts={this.props.courts} /> } />
             </Switch>
         </div>
