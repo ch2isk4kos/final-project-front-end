@@ -54,7 +54,7 @@ class CourtForm extends React.Component {
                 type="input"
                 name="imgURL"
                 placeholder="Image URL"
-                value={this.state.imgURL}
+                value={this.state.img_url}
                 onChange={this.handleOnChange}
             /><br></br>
 
