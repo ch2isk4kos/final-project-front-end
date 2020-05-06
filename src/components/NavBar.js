@@ -13,6 +13,8 @@ const NavBar = () => {
         {"    |    "}
         <NavLink to="/courts" activeStyle={activeStyle}>Courts</NavLink>
         {"    |    "}
+        <NavLink to="/courts/new" activeStyle={activeStyle}>Add Court</NavLink>
+        {"    |    "}
         <NavLink to="/about" activeStyle={activeStyle}>About</NavLink>
     </nav>
     </div>
