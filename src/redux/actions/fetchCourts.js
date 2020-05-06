@@ -1,4 +1,4 @@
-export function fetchCourts() {
+export const fetchCourts = () => {
     return (dispatch) => {
         fetch('http://localhost:3000/api/v1/courts')
         .then(response => response.json())
