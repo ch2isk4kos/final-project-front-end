@@ -16,6 +16,7 @@ class CourtsContainer extends React.Component {
         <div>
             <Switch>
                 <Route exact path="/courts" render={(props) => <Courts {...props} courts={this.props.courts} /> } />
+                <Route path="/courts/:id" render={(props) => <Court {...props} courts={this.props.courts} /> } />
             </Switch>
         </div>
         )
