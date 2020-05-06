@@ -4,7 +4,9 @@ export default function courtsReducer(state = {courts: []}, action) {
             return action.courts
 
         case 'ADD_COURT':
-            return {...state, courts: [...action.court]}
+            const court = Object.assign({}, ...state, action.court)
+            console.log(court)
+            return [ ...state, court ]
 
         default:
             return state
