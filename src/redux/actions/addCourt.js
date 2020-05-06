@@ -9,9 +9,6 @@ export const addCourt = (state) => {
             body: JSON.stringify(state)
         })
         .then(response => response.json())
-        .then(court => dispatch({
-            type: 'ADD_COURT',
-            court
-        }))
+        .then(court => dispatch({type: 'ADD_COURT', court}))
     }
 }
