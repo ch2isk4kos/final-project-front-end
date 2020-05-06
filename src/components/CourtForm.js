@@ -15,15 +15,23 @@ class CourtForm extends React.Component {
         this.setState({
             [event.target.name]: event.target.value
         })
+    }
 
-        console.log(event.target.value)
+    handleOnSubmit = event => {
+        event.preventDefault()
+        this.props.addCourt(this.state)
+        this.setState({
+            name: '',
+            address: '',
+            imgURL: '',
+            floor_type: '',
+        })
     }
 
     render () {
         return(
         <div>
-        <form>
-
+        <form onSubmit={this.handleOnSubmit}>
             <input
                 type="input"
                 name="name"
@@ -56,7 +64,7 @@ class CourtForm extends React.Component {
                 onChange={this.handleOnChange}
             /><br></br>
 
-        <input type="submit" name="Submit" />
+            <input type="submit" name="Submit" />
         </form>
         </div>
         )
