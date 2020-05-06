@@ -5,12 +5,10 @@ import { addCourt } from '../redux/actions/addCourt'
 class CourtForm extends React.Component {
 
     state = {
-        court: {
-            name: '',
-            address: '',
-            imgURL: '',
-            floor_type: '',
-        }
+        name: '',
+        address: '',
+        imgURL: '',
+        floor_type: '',
     }
 
     render () {
