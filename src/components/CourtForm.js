@@ -7,7 +7,7 @@ class CourtForm extends React.Component {
     state = {
         name: '',
         address: '',
-        imgURL: '',
+        img_url: '',
         floor_type: '',
     }
 
@@ -23,7 +23,7 @@ class CourtForm extends React.Component {
         this.setState({
             name: '',
             address: '',
-            imgURL: '',
+            img_url: '',
             floor_type: '',
         })
     }
@@ -52,7 +52,7 @@ class CourtForm extends React.Component {
 
             <input
                 type="input"
-                name="imgURL"
+                name="img_url"
                 placeholder="Image URL"
                 value={this.state.img_url}
                 onChange={this.handleOnChange}
