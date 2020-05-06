@@ -9,7 +9,7 @@ const Court = props => {
     return (
     <div>
         <h3>{court && court.name}</h3>
-        <img src={court && court.img_url} width="500" height="300"></img>
+        <img src={court && court.img_url} width="500" height="300" alt={court && court.name}></img>
         <h5>{court && court.address}</h5>
     </div>
     )
