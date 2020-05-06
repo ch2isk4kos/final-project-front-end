@@ -6,6 +6,10 @@ import { fetchCourts } from '../redux/actions/fetchCourts'
 
 class CourtsContainer extends React.Component {
 
+    componentDidMount() {
+        this.props.fetchCourts()
+    }
+
     render () {
         return (
         <div>
