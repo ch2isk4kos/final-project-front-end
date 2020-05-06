@@ -32,6 +32,8 @@ class CourtForm extends React.Component {
         return(
         <div>
         <form onSubmit={this.handleOnSubmit}>
+            <h2>New Court</h2>
+
             <input
                 type="input"
                 name="name"
