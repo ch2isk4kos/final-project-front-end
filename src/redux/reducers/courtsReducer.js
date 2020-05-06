@@ -3,6 +3,9 @@ export default function courtsReducer(state = {courts: []}, action) {
         case 'FETCH_COURTS':
             return action.courts
 
+        case 'ADD_COURT':
+            return {...state, courts: [...state.courts, action.court]}
+
         default:
             return state
     }
