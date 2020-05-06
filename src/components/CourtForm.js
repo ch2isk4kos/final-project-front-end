@@ -19,7 +19,9 @@ class CourtForm extends React.Component {
 
     handleOnSubmit = event => {
         event.preventDefault()
+        // debugger
         this.props.addCourt(this.state)
+        // debugger
         this.setState({
             name: '',
             address: '',
