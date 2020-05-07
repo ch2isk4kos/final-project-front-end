@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { addCourt } from '../redux/actions/addCourt'
 
@@ -29,6 +29,7 @@ class CourtForm extends React.Component {
             img_url: '',
             floor_type: '',
         })
+        this.props.history.push('/courts');
     }
 
     render () {
@@ -76,4 +77,4 @@ class CourtForm extends React.Component {
     }
 }
 
-export default connect(null, { addCourt })(CourtForm);
+export default withRouter(connect(null, { addCourt })(CourtForm));
